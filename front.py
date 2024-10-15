@@ -7,9 +7,11 @@ from tensorflow.keras.models import load_model
 import unidecode
 from nltk.corpus import stopwords
 from textblob import TextBlob
-from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
+from nltk.tokenize import word_tokenize
+
 
 # Cargar el archivo intents.json usando rutas seguras
 base_dir = os.path.dirname(os.path.abspath(__file__))
