@@ -6,3 +6,4 @@ unidecode
 nltk
 textblob
 setuptools  # <-- Añade esta línea
+wheel
