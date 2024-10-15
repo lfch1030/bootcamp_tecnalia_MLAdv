@@ -10,7 +10,25 @@ from textblob import TextBlob
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
+from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+
+import os
+import nltk
+
+# Añadir la ruta de la carpeta `nltk_data` para que NLTK la encuentre
+nltk_data_path = os.path.join(os.getcwd(), 'nltk_data')
+nltk.data.path.append(nltk_data_path)
+
+# Descargar los paquetes necesarios de nltk si no están disponibles
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.download('stopwords', download_dir=nltk_data_path)
+
+
+
+# Ya no necesitas descargar en runtime, solo usa los recursos locales
+stop_words = set(stopwords.words('spanish'))
+
 
 
 # Cargar el archivo intents.json usando rutas seguras
@@ -39,8 +57,6 @@ ultima_opcion = None  # Variable para recordar el último intent de cena
 
 
 
-# Cargar stop words en español
-stop_words = set(stopwords.words('spanish'))
 
 # Función para preprocesar el texto
 def preprocess_text(text):
