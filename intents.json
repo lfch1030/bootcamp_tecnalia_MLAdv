@@ -1,0 +1,183 @@
+{
+  "intents": [
+    
+    {
+      "tag": "saludo",
+      "patterns": [
+        "Hola",
+        "Buenos días",
+        "¿Qué tal?",
+        "¿Cómo estás?",
+        "Hola, ¿qué tal?",
+        "¡Hola!",
+        "Buenas",
+        "Hola, ¿cómo te va?",
+        "Saludos",
+        "Hola, ¿cómo te encuentras?",
+        "¿Qué hay de nuevo?",
+        "Hola, mucho gusto",
+        "Buenas tardes",
+        "Hola, buen día",
+        "¿Qué cuentas?"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte?",
+        "¡Buenos días! ¿Cómo te puedo ayudar?",
+        "Hola, ¿en qué puedo asistirte?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Adiós",
+        "Hasta luego",
+        "Nos vemos",
+        "Chao",
+        "Me tengo que ir",
+        "Hasta pronto",
+        "Cuídate",
+        "Nos vemos luego",
+        "Me voy",
+        "Que tengas un buen día",
+        "Hasta la próxima",
+        "Nos vemos más tarde",
+        "Adiós, que estés bien",
+        "Me despido",
+        "Que te vaya bien"
+      ],
+      "responses": [
+        "¡Adiós! Que tengas un buen día.",
+        "Hasta luego, cuídate.",
+        "Nos vemos pronto."
+      ]
+    },
+    {
+      "tag": "opcion",
+      "patterns": [
+        "opción",
+        "Tienes otra opción",
+        "No me gusta tu sugerencia",
+        "otra cosa",
+        "tienes otra comida",
+        "¿Qué otra opción hay?",
+        "¿Puedes darme otra opción?",
+        "Dame otra sugerencia",
+        "No estoy convencido, otra opción",
+        "¿Qué más tienes?",
+        "Otra alternativa, por favor",
+        "No me gusta, ¿qué más puedes ofrecer?",
+        "Sugiéreme otra cosa",
+        "¿Alguna otra recomendación?",
+        "Algo más, por favor",
+        "Quiero una alternativa"
+      ],
+      "responses": [
+    "Otra opción podría ser preparar tacos vegetarianos con frijoles y aguacate.",
+    "¿Qué tal una sopa de tomate y albahaca con un toque de crema?",
+    "También podrías probar un risotto de setas y parmesano.",
+    "Una tortilla de patatas con cebolla caramelizada podría ser una opción interesante.",
+    "Ensalada César con pollo a la parrilla.",
+    "Sándwich de pavo con queso suizo y mostaza.",
+    "Pizza de verduras asadas con queso de cabra.",
+    "Sopa de calabaza y zanahoria con pan crujiente.",
+    "Pasta con salsa de champiñones y espinacas.",
+    "Tortitas de garbanzos con ensalada de rúcula.",
+    "Papas rellenas con brócoli y queso cheddar.",
+    "Enchiladas de pollo con salsa verde.",
+    "Bowl de quinoa con hummus y vegetales asados.",
+    "Curry de garbanzos y espinacas con arroz basmati."
+]
+
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": [
+    "Gracias",
+    "Muchas gracias",
+    "Te lo agradezco",
+    "Gracias por la ayuda",
+    "Buena opción",
+    "Me gusta esa opción",
+    "Esa opción suena bien",
+    "Suena delicioso",
+    "Qué buena sugerencia",
+    "Me encanta esa idea",
+    "Esa opción está genial",
+    "Gracias, suena muy bien",
+    "Qué buena opción para cenar",
+    "Parece delicioso",
+    "Me encanta la sugerencia"
+],
+      "responses": [
+        "¡De nada! Siempre estoy aquí para ayudarte.",
+        "Es un placer ayudarte.",
+        "¡Con gusto!"
+      ]
+    },
+    {
+      "tag": "cena",
+      "patterns": [
+        "¿Qué podría cenar hoy?",
+        "¿Tienes alguna sugerencia para la cena?",
+        "Estoy buscando ideas para cenar",
+        "Quiero preparar algo para cenar",
+        "No sé qué cenar hoy",
+        "¿Qué me recomiendas para cenar?",
+        "¿Qué puedo cocinar esta noche?",
+        "Dame una idea para la cena",
+        "Estoy pensando en qué cenar",
+        "Sugiéreme algo para la cena",
+        "¿Tienes alguna idea para la cena?",
+        "No sé qué hacer de cenar",
+        "¿Qué podría cocinar esta noche?",
+        "Necesito ideas para la cena",
+        "¿Alguna recomendación para cenar?",
+        "¿Qué comer hoy?",
+        "Tengo hambre y no sé qué comer",
+        "que opcion de cena me podrias dar?"
+      ],
+     "responses": [
+    "Ensalada de pollo con aguacate y aderezo de mostaza.",
+    "Lasaña de verduras con queso ricotta.",
+    "Filete de atún a la parrilla con espárragos.",
+    "Sopa de lentejas con pan integral tostado.",
+    "Wraps de pollo al pesto con vegetales asados.",
+    "Arroz con mariscos y un toque de limón.",
+    "Quiche de espinacas y queso feta.",
+    "Hamburguesa de garbanzos con guacamole.",
+    "Tacos de pescado con col y salsa de mango.",
+    "Pechuga de pollo a la plancha con puré de batata."
+  ]
+    },
+    {
+      "tag": "cena_carne",
+      "patterns": [
+        "Quiero una opción con carne",
+        "Prefiero carne",
+        "Me gusta la carne",
+        "Algo con carne estaría bien"
+      ],
+      "responses": [
+        "Podrías preparar un filete de res con puré de papas.",
+        "¿Qué tal un pollo a la parrilla con ensalada?",
+        "Unos tacos de carne asada siempre son una buena opción.",
+        "Podrías hacer unas albóndigas con salsa de tomate."
+      ]
+    },
+    {
+      "tag": "cena_vegetariana",
+      "patterns": [
+        "Quiero una opción vegetariana",
+        "Prefiero algo sin carne",
+        "Me gusta la comida vegetariana",
+        "Algo vegetariano estaría bien"
+      ],
+      "responses": [
+        "Una opción deliciosa es una pasta con pesto y espinacas.",
+        "Podrías hacer un bowl de quinoa con aguacate y garbanzos.",
+        "Unos tacos vegetarianos con champiñones y queso son perfectos.",
+        "¿Qué tal una ensalada de lentejas con aguacate y tomate?"
+      ]
+    }
+  ]
+}
