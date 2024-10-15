@@ -36,8 +36,7 @@ classes = np.load(label_encoder_path, allow_pickle=True)
 preferencia = None  # Variable global para almacenar la preferencia del usuario
 ultima_opcion = None  # Variable para recordar el último intent de cena
 
-# Cargar el modelo de spaCy para español
-nlp = spacy.load('es_core_news_sm')
+
 
 # Cargar stop words en español
 stop_words = set(stopwords.words('spanish'))
@@ -50,26 +49,16 @@ def preprocess_text(text):
     # Corrección ortográfica usando TextBlob
     corrected_text = str(TextBlob(text).correct())
 
-    # Tokenizar y lematizar usando spaCy
-    doc = nlp(corrected_text)
-
-    # Filtrar stop words, signos de puntuación y lematizar
+    # Tokenizar el texto
+    tokens = word_tokenize(corrected_text)
+    
+    # Filtrar stop words y signos de puntuación
     processed_words = [
-        token.lemma_ for token in doc
-        if token.text not in stop_words and not token.is_punct and not token.is_digit
+        word for word in tokens
+        if word not in stopwords.words('spanish') and word.isalnum()
     ]
 
     return ' '.join(processed_words)
-
-# Paso 5: Preprocesar los patrones y las etiquetas
-patterns = []
-tags = []
-
-for intent in intents["intents"]:
-    for pattern in intent["patterns"]:
-        processed_pattern = preprocess_text(pattern)
-        patterns.append(processed_pattern)
-        tags.append(intent["tag"])
 
 
 # Función del chatbot
