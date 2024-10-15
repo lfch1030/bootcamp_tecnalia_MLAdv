@@ -6,5 +6,3 @@ nltk
 textblob
 setuptools
 wheel
-distlib
-
