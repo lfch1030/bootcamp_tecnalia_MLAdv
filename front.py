@@ -4,7 +4,6 @@ import random
 import json
 import os
 from tensorflow.keras.models import load_model
-import spacy
 import unidecode
 from nltk.corpus import stopwords
 from textblob import TextBlob
