@@ -1,8 +1,8 @@
 streamlit
 numpy
 tensorflow
+scikit-learn
 unidecode
 nltk
 textblob
-setuptools
-wheel
+
