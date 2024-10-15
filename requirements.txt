@@ -5,5 +5,5 @@ spacy==3.8.2
 unidecode
 nltk
 textblob
-setuptools  # <-- Añade esta línea
+setuptools
 wheel
