@@ -31,6 +31,16 @@ stop_words = set(stopwords.words('spanish'))
 
 
 
+
+# Añadir la ruta de la carpeta `nltk_data` para que NLTK la encuentre
+nltk.data.path.append('nltk_data')
+
+
+# Ya no necesitas descargar en runtime, solo usa los recursos locales
+stop_words = set(stopwords.words('spanish'))
+
+
+
 # Cargar el archivo intents.json usando rutas seguras
 base_dir = os.path.dirname(os.path.abspath(__file__))
 intents_path = os.path.join(base_dir, "intents.json")
